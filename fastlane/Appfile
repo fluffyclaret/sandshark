@@ -1,6 +1,7 @@
-# app_identifier("[[APP_IDENTIFIER]]") # The bundle identifier of your app
-# apple_id("[[APPLE_ID]]") # Your Apple email address
-
+app_identifier "uk.co.crinitus.sandshark" # The bundle identifier of your app
+apple_id "fluffytheclaret@gmail.com" # Your Apple email address
+team_id "G2B69X8RRP" # Team identifier
+itc_team_name "Graeme Wells" # Test Flight team
 
 # For more information about the Appfile, see:
 #     https://docs.fastlane.tools/advanced/#appfile
