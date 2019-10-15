@@ -36,7 +36,7 @@ platform :ios do
   lane :set_ios_version do
     version = ENV["APP_VERSION"]
     latestBuildNumber = latest_testflight_build_number(version: version)
-    newBuildNumber = ((latestBuildNumber.is_a? String) ? latestBuildNumber.to_i : latestBuildNumber) + 1    
-    ENV["IOS_VERSION"] = newBuildNumber.to_s
+    newBuildNumber = ((latestBuildNumber.is_a? String) ? latestBuildNumber.to_i : latestBuildNumber) + 1
+    sh("envman add --key IOS_VERSION --value newBuildNumber.to_s")
   end
 end
