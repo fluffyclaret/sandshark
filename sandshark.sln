@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sandshark.iOS", "sandshark.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sandshark", "sandshark\sandshark.csproj", "{0DED405E-C8EE-4EFB-91C4-5A5667BEBA16}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sandshark.Tests", "sandshark.Tests\sandshark.Tests.csproj", "{CDD479A6-8C7C-462E-BF4A-2BB535AEA22C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,5 +55,17 @@ Global
 		{0DED405E-C8EE-4EFB-91C4-5A5667BEBA16}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{0DED405E-C8EE-4EFB-91C4-5A5667BEBA16}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{0DED405E-C8EE-4EFB-91C4-5A5667BEBA16}.Release|iPhone.Build.0 = Release|Any CPU
+		{CDD479A6-8C7C-462E-BF4A-2BB535AEA22C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDD479A6-8C7C-462E-BF4A-2BB535AEA22C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDD479A6-8C7C-462E-BF4A-2BB535AEA22C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDD479A6-8C7C-462E-BF4A-2BB535AEA22C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDD479A6-8C7C-462E-BF4A-2BB535AEA22C}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{CDD479A6-8C7C-462E-BF4A-2BB535AEA22C}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{CDD479A6-8C7C-462E-BF4A-2BB535AEA22C}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{CDD479A6-8C7C-462E-BF4A-2BB535AEA22C}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{CDD479A6-8C7C-462E-BF4A-2BB535AEA22C}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{CDD479A6-8C7C-462E-BF4A-2BB535AEA22C}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{CDD479A6-8C7C-462E-BF4A-2BB535AEA22C}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{CDD479A6-8C7C-462E-BF4A-2BB535AEA22C}.Release|iPhone.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

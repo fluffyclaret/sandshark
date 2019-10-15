@@ -26,6 +26,11 @@ Create an app on Apple Developer and App Store Connect sites
 fastlane ios upload_ipa
 ```
 Upload the app to App Store Connect
+### ios set_ios_version
+```
+fastlane ios set_ios_version
+```
+Grab the latest iOS version and increment it
 
 ----
 

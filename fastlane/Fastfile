@@ -16,6 +16,12 @@
 default_platform(:ios)
 
 platform :ios do
+
+  before_all do
+    ENV["IOS_VERSION"]="1"
+    ENV["APP_VERSION"]="1.0.0"
+  end
+
   desc "Create an app on Apple Developer and App Store Connect sites"
   lane :create_app do
     produce
@@ -24,5 +30,11 @@ platform :ios do
   desc "Upload the app to App Store Connect"
   lane :upload_ipa do
     sh("fastlane pilot upload")
+  end
+
+  desc "Grab the latest iOS version and increment it"
+  lane :set_ios_version do
+    version = ENV["APP_VERSION"]
+    ENV["IOS_VERSION"] = latest_testflight_build_number(version: version)
   end
 end
