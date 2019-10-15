@@ -35,6 +35,8 @@ platform :ios do
   desc "Grab the latest iOS version and increment it"
   lane :set_ios_version do
     version = ENV["APP_VERSION"]
-    ENV["IOS_VERSION"] = latest_testflight_build_number(version: version)
+    latestBuildNumber = latest_testflight_build_number(version: version)
+    newBuildNumber = ((latestBuildNumber.is_a? String) ? latestBuildNumber.to_i : latestBuildNumber) + 1    
+    ENV["IOS_VERSION"] = newBuildNumber.to_s
   end
 end
