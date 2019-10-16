@@ -38,6 +38,7 @@ platform :ios do
     latestBuildNumber = latest_testflight_build_number(version: version)
     newBuildNumber = ((latestBuildNumber.is_a? String) ? latestBuildNumber.to_i : latestBuildNumber) + 1
     ios_version = newBuildNumber.to_s
+    echo ios_version
     sh("envman add --key IOS_VERSION --value #{ios_version}")
   end
 end
