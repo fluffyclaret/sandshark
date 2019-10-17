@@ -29,7 +29,8 @@ platform :ios do
 
   desc "Upload the app to App Store Connect"
   lane :upload_ipa do
-    sh("fastlane pilot upload")
+    notes = ENV["RELEASE_NOTES"]
+    sh("fastlane pilot upload --changelog #{notes}")
   end
 
   desc "Grab the latest iOS version and increment it"
