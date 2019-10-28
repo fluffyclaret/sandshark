@@ -104,4 +104,11 @@
     </ProjectReference>
   </ItemGroup>
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+ <PropertyGroup>
+    <DotfuscatorMSBuildDir>..\dotfuscator\PreEmptive.Protection.Dotfuscator.Pro.Eval\tools\msbuilddir</DotfuscatorMSBuildDir>
+    <DotfuscatorGenerateConfigFileIfMissing>true</DotfuscatorGenerateConfigFileIfMissing>
+    <DotfuscatorEnabled Condition="'$(Configuration)' == 'Release'">true</DotfuscatorEnabled>
+  </PropertyGroup>
+ <Import Project="$(DotfuscatorMSBuildDir)\PreEmptive.Dotfuscator.Common.targets" />
 </Project>
+
